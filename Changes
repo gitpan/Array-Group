@@ -1,0 +1,18 @@
+Revision history for Perl extension Array::Reform.
+
+1.0   Fri Jun  2 14:44:21 2000
+	- original version; created by h2xs 1.19
+
+1.01  Mon Jun  5 01:40:21 2000
+	- added tests, changed to pass array ref, some error checking.
+	  (crystalflame at perlmonks)
+
+1.03  Thu May 22 18:33:57 2003
+        - rewrote reform, added dissect, updated tests and docs.
+         (kilinrax)
+
+1.04  Fri Jun  6 17:19:30 2003
+        - tweaked documentation, added README.
+        - allowed methods to be called as either functions or a class
+          methods. added parameter validation.
+         (kilinrax)
