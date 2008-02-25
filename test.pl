@@ -6,7 +6,7 @@
 # change 'tests => 1' to 'tests => last_test_to_print';
 
 use Test;
-BEGIN { plan tests => 9 };
+BEGIN { plan tests => 8 };
 use Array::Group qw( :all );
 ok(1); # If we made it this far, we're ok.
 
@@ -29,8 +29,8 @@ ok( scalar @new == 2 );
 ok( scalar @new == 2 );
 
 # check calling with an array rather than an arrayref works
-@new = ngroup( $size, @orig );
-ok( scalar @new == 2 );
+#@new = ngroup( $size, @orig );
+#ok( scalar @new == 2 );
 
 $size = 4;
 $new = ngroup( $size, \@orig );

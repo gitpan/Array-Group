@@ -25,7 +25,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = '1.00';
+our $VERSION = '2.0a';
 
 # Preloaded methods go here.
 sub ngroup {
@@ -75,12 +75,12 @@ sub _validate_params {
 
   # If only one argument remains, check to see if it is an arrayref, otherwise, reate a reference to it
   my $r_list;
-  if( ($#_ == 0) &&
-      (ref($_[0]) eq 'ARRAY') ) {
-    $r_list = $_[0];
-  } else {
-    $r_list = \@_;
-  }
+#  if( ($#_ == 0) &&
+#      (ref($_[0]) eq 'ARRAY') ) {
+  $r_list = $_[0];
+#   } else {
+#     $r_list = \@_;
+#   }
 
   return $size, $r_list;
 }
