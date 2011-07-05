@@ -25,7 +25,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = '2.0a';
+our $VERSION = '3.0';
 
 # Preloaded methods go here.
 sub ngroup {
