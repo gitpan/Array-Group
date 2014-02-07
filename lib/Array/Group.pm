@@ -25,7 +25,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = '3.0';
+our $VERSION = '4.0';
 
 # Preloaded methods go here.
 sub ngroup {
@@ -144,31 +144,6 @@ reformed can be passed as a reference.
 
 
 
-=head1 AUTHOR
-
-The ongoing saga between princepawn, davorg and kilinrax over who did 
-when in terms of getting this out is rather long-winded.
-They have their side of the story and I have mine. As is usual, it is
-princepawn versus some other majority. But what more could you expect from
-the black sheep of the Perl community?
-
-One thing is for certain
-there is a bug in L<Array::Reform|Array::Reform> 
-and two months have passed and the
-author has done nothing about my RT bug patch submitted 1/21/06:
-L<http://rt.cpan.org/Public/Bug/Display.html?id=17201>
-
-Not to mention that I held the Array::Reform namespace and when I turned it 
-overto him, he did not even acknowledge this. 
-
-The test suite for L<HTML::Element::Library|HTML::Element::Library> 
-depends on this
-functionality and since I have people complaining about the wacky errors
-coming out of kilinrax's version of this module, and since he does not
-respond to emails, it is clear it is time to drop any reliance on his module.
-
-So, I wont say who the author is of what... this is free software anyway.
-
 
 =head1 SEE ALSO
 
@@ -177,5 +152,16 @@ So, I wont say who the author is of what... this is free software anyway.
 =item * L<Array::Reform>
 
 =back
+
+=head1 AUTHOR
+
+Terrence Monroe Brannon <tbone@CPAN.org>
+
+=head1 COPYRIGHT
+
+Copyright 1999-present by Terrence Brannon.
+
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
 
 =cut
