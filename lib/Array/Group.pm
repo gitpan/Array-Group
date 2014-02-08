@@ -1,13 +1,14 @@
 package Array::Group;
 
+use 5.006;
+
 use strict;
-use vars qw($VERSION @ISA @EXPORT @EXPORT_OK);
 
 use Carp;
 
 require Exporter;
 
-our @ISA = qw(Exporter DynaLoader);
+our @ISA = qw(Exporter);
 
 # Items to export into callers namespace by default. Note: do not export
 # names by default without a very good reason. Use EXPORT_OK instead.
@@ -25,7 +26,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = '4.0';
+our $VERSION = '4.1';
 
 # Preloaded methods go here.
 sub ngroup {
@@ -156,6 +157,13 @@ reformed can be passed as a reference.
 =head1 AUTHOR
 
 Terrence Monroe Brannon <tbone@CPAN.org>
+
+=head2 CONTRIBUTORS
+
+I would like to thank Alexandr Ciornii for his help in upgrading this
+distribution's format. He took me from using a F<test.pl> file to using
+the F<t/> directory and removed some old crufty things that were not needed.
+He also upgraded the Makefile.PL.
 
 =head1 COPYRIGHT
 

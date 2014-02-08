@@ -5,19 +5,19 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test;
-BEGIN { plan tests => 8 };
+use Test::More tests => 9;
+#BEGIN { plan  };
 use Array::Group qw( :all );
 ok(1); # If we made it this far, we're ok.
 
-warn "Array::Group::VERSION    - $Array::Group::VERSION";
+diag("Array::Group::VERSION $Array::Group::VERSION");
 
 #########################
 
 # Insert your test code below, the Test module is use()ed here so read
 # its man page ( perldoc Test ) for help writing this test script.
 
-use vars qw( @orig $size @new $new );
+our (@orig, $size, @new, $new);
 
 @orig = ( 1 .. 16 );
 $size = 8;
@@ -50,4 +50,4 @@ ok( $new[1][0] == 2 && $new[0][1] == 3 );
 
 $size = 3;
 @new = dissect( $size, \@orig );
-ok( $new[0][1] == 4 && $new[2][0] == 3 );
+is( $new[0][1], 4 ); is( $new[2][0], 3 );

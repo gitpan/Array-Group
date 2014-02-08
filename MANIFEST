@@ -3,6 +3,6 @@ lib/Array/Group.pm
 Makefile.PL
 MANIFEST
 README
-test.pl
+t/test.t
 META.yml                                 Module meta-data (added by MakeMaker)
 META.json                                Module JSON meta-data (added by MakeMaker)
